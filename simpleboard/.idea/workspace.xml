@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c03508-3efa-4b0f-b074-4975388ffcd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/simpleboard/simpleboard/config/JpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../document/use-case.drawio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/simpleboard/simpleboard/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simpleboard/simpleboard/domain/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/simpleboard/simpleboard/domain/ArticleComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simpleboard/simpleboard/domain/ArticleComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +142,8 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "77ebc3688d78008b84512488239422bc"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -173,7 +170,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.JpaRepositoryTest">
+  <component name="RunManager" selected="Spring Boot.SimpleboardApplication">
     <configuration name="JpaRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -315,6 +312,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675651874613</updated>
       <workItem from="1675651876033" duration="11177000" />
+      <workItem from="1675743960521" duration="661000" />
     </task>
     <servers />
   </component>
