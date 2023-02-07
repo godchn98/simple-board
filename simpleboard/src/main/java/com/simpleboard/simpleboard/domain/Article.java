@@ -24,9 +24,9 @@ import java.util.Set;
         @Index(columnList = "createdBy"),
         @Index(columnList = "modifiedBy")
 })
-@EntityListeners(AuditingEntityListener.class)
+
 @Entity
-public class Article {
+public class Article extends AuditingFields{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -41,11 +41,6 @@ public class Article {
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
     private final Set<ArticleComment> articleComments = new LinkedHashSet<>();
 
-
-    @CreatedDate @Column(nullable = false) LocalDateTime createdAt;
-    @CreatedBy @Column(nullable = false, length = 100) String createdBy;
-    @LastModifiedDate @Column(nullable = false) LocalDateTime modifiedAt;
-    @LastModifiedBy @Column(nullable = false, length = 100) String modifiedBy;
 
 
     protected Article() {}
