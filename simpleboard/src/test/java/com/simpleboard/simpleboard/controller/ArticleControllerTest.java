@@ -35,7 +35,7 @@ class ArticleControllerTest {
                 .andExpect(model().attributeExists("articles"));
     }
 
-    @Disabled("build ongoing")
+
     @DisplayName("[view][GET] article detail")
     @Test
     public void givenNothing_whenRequestingArticle_thenReturnsArticle() throws Exception {
@@ -44,7 +44,7 @@ class ArticleControllerTest {
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("articles/detail"))
                 .andExpect(model().attributeExists("article"))
-                .andExpect(view().name("articleComments"));
+                .andExpect(model().attributeExists("articleComments"));
     }
 
     @Disabled("build ongoing")
