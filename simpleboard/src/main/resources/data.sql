@@ -1,7 +1,7 @@
 
 insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
-    ('yj', '{noop}f1234', 'YJ', 'yj@mail.com', 'YJrocks.', now(), 'YJ', now(), 'YJ');
--- test user, TODO: password hidden neede
+    ('yeoj', '{noop}f1234', 'YJ', 'yjin@mail.com', 'YJrocks.', now(), 'YJ', now(), 'YJ');
+-- test user, TODO: password hidden needed
 
 
 
