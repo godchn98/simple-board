@@ -1,3 +1,11 @@
+
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('yeoj', '{noop}f1234', 'YJ', 'yjin@mail.com', 'YJrocks.', now(), 'YJ', now(), 'YJ');
+-- test user, TODO: password hidden needed
+
+
+
+
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Vivamus vestibulum sagittis sapien.', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 'Teal', 'Cam', 'Quincy', '2022-09-06 18:41:51', '2022-09-27 06:50:03');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('In congue.', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'Indigo', 'Dolores', 'Tracy', '2022-07-01 07:09:33', '2022-12-08 03:41:57');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Praesent blandit lacinia erat.', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 'Mauv', 'Xever', 'Esmeralda', '2022-07-30 08:44:42', '2022-02-14 20:05:45');
@@ -1123,3 +1131,4 @@ insert into article_comment (article_id, content, created_by, modified_by, creat
 insert into article_comment (article_id, content, created_by, modified_by, created_at, modified_at) values (11, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Iago', 'Allison', '2022-07-27 19:22:47', '2023-01-27 12:56:12');
 insert into article_comment (article_id, content, created_by, modified_by, created_at, modified_at) values (89, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 'Hebert', 'Shoshanna', '2022-03-06 20:19:03', '2022-09-28 10:19:03');
 insert into article_comment (article_id, content, created_by, modified_by, created_at, modified_at) values (3, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'Kienan', 'Cobbie', '2022-02-15 04:14:05', '2022-08-10 13:27:21');
+
