@@ -2,10 +2,10 @@ package com.simpleboard.simpleboard.repository;
 
 import com.simpleboard.simpleboard.config.JpaConfig;
 import com.simpleboard.simpleboard.domain.Article;
+import com.simpleboard.simpleboard.domain.UserAccount;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ActiveProfiles;
@@ -22,13 +22,15 @@ class JpaRepositoryTest {
 
     private final ArticleRepository articleRepository;
     private final ArticleCommentRepository articleCommentRepository;
+    private final UserAccoutRepository userAccoutRepository;
 
     public JpaRepositoryTest(
             @Autowired ArticleRepository articleRepository,
-            @Autowired ArticleCommentRepository articleCommentRepository
-    ) {
+            @Autowired ArticleCommentRepository articleCommentRepository,
+            @Autowired UserAccoutRepository userAccoutRepository) {
         this.articleRepository = articleRepository;
         this.articleCommentRepository = articleCommentRepository;
+        this.userAccoutRepository = userAccoutRepository;
     }
 
     @DisplayName("Select Test")
@@ -45,8 +47,10 @@ class JpaRepositoryTest {
     @Test
     void givenTestData_whenInsert_thenWorksFine() {
         long previousCount = articleRepository.count();
+        UserAccount userAccount = userAccoutRepository.save(UserAccount.of("yj", "pw", null, null, null));
+        Article article = articleRepository.save(Article.of(userAccount, "new article", "new content", "#spring"));
 
-        Article savedArticle = articleRepository.save(Article.of("new article", "new content", "#spring"));
+        articleRepository.save(article);
 
         assertThat(articleRepository.count()).isEqualTo(previousCount + 1);
 
